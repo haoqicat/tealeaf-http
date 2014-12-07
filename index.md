@@ -30,7 +30,7 @@ title: http
     </ul>
     <p class="part">HTTP</p>
     <ul class="chapters">
-      <li><a href="book/http/1_making-requests.html">Making Requests</a></li>
+      <li><a href="book/http/1_making_requests.html">Making Requests</a></li>
       <li><a href="book/http/2_processing_responses.html">Processing Responses</a></li>
       <li><a href="book/http/3_stateful_web_applications.html">Stateful Web Applications</a></li>
       <li><a href="book/http/4_security.html">Security</a></li>
