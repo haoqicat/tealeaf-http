@@ -152,15 +152,19 @@ body {
   margin: 40px auto;
 }
 .chapter-contents {
-  float: left;
   width: 700px;
-  margin-left: 40px;
+  margin: 0 auto;
   font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.3px;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .book-wrapper img {
+  display: block;
   width: 700px;
+}
+.book-wrapper img[alt="certificates"] {
+  display: block;
+  width: 291px;
 }
