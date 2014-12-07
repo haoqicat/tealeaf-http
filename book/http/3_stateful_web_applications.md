@@ -44,7 +44,7 @@ title: 有状态的web应用
 cookie就是在一个请求/响应周期内, 服务器发送给客户端, 并存储在客户端的一段数据.Cookies 或者 HTTP cookies, 就是存储在浏览器里包含着会话信息的小文件.默认情况下, 大部分浏览器的cookies都是启用的.当你第一次访问一个网站的时候, 服务器会给你发送会话信息并将其存储在你本地电脑浏览器的cookie里.要注意的是真正的会话数据是存在服务器上的.在客户端发起每一个请求的时候, 服务器就会比对客户端的cookie和服务器上的会话数据, 用来标识当前的会话.通过这种方法, 当你再次访问同一个网站的时候, 服务器就会通过cookie和里面的信息来认出你的会话.
 ![cookie](http://d186loudes4jlv.cloudfront.net/http/images/cookie_diagram.png)
 
-我们来看一个真实的案例, 用审查器看看cookies是如何被创建的.我们要向```http://www.yahoo.com```发起一个请求.要注意的是, 如果你的浏览器里已经有了Yahoo的cookie, 你可能需要换一个浏览器.
+我们来看一个真实的案例, 用审查器看看cookies是如何被创建的.我们要向```http://www.yahoo.com```发起一个请求.要注意的是, 如果你的浏览器里已经有了Yahoo的cookie, 你可能需要换一个网站.
 
 保持审查器打开, 输入这个网址, 然后看看我们的请求头部:
 ![yahoo_cookie](http://d186loudes4jlv.cloudfront.net/http/images/request_no_cookies.png)
