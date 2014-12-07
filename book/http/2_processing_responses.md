@@ -61,7 +61,7 @@ Location: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings
 |头部名称  | 描述 | 举例 |
 |:------------- |:---------------| :-------------|
 | Content-Encoding | 数据的编码类型 | Content-Encoding: gzip |
-| Server | 数据库的名称 | Server:thin 1.5.0 codename Knife |
+| Server | 服务器的名称 | Server:thin 1.5.0 codename Knife |
 | Location | 提醒客户端新资源的位置 | Location: http://www.github.com/login |
 | Content-Type | 响应数据包含的类型 | Content-Type:text/html; charset=UTF-8 |
 
