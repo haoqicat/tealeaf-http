@@ -1,3 +1,8 @@
+---
+layout: book
+title: 发起HTTP请求
+---
+
 #发起HTTP请求
 
 ###浏览器的HTTP请求

@@ -1,3 +1,8 @@
+---
+layout: book
+title: 准备工作
+---
+
 #准备工作
 对于HTTP的基础做了些概览之后，让我们来熟悉一下会在本书中用到，用于展示HTTP如何工作的工具。接下来会介绍一些你可能会需要到的工具。有一个重点是你需要知道的，那就是阅读本书的时候，你使用什么工具都无所谓，所以挑一个你用着顺手的就好。
 
@@ -47,5 +52,5 @@ Windows用户可以参照以下步骤安装```curl```:
 	![command](http://d186loudes4jlv.cloudfront.net/http/images/curl_command_prompt.png)
 
 在合适的时候,用```curl```发起请求的命令会出现在书中以帮助使用```curl```的读者.
-	
-	
+
+

@@ -147,3 +147,7 @@ body {
   margin-top: 25px;
   color: #E0E0E0;
 }
+.book-wrapper {
+  width: 1000px;
+  margin: 40px auto;
+}
