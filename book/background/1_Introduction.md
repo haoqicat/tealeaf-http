@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 简介
+title: introduction
 ---
 
 #简介

@@ -23,18 +23,18 @@ title: http
   <div class="table-of-contents">
     <p class="part">BACKGROUND</p>
     <ul class="chapters">
-      <li><a href="/book/background/1_introduction.html">Introduction</a></li>
-      <li><a href="/book/background/2_background.html">Background</a></li>
-      <li><a href="/book/background/3_what_is_url.html">What is a URL?</a></li>
-      <li><a href="/book/background/4_preparations.html">preparations</a></li>
+      <li><a href="tealeaf-http/introduction.html">Introduction</a></li>
+      <li><a href="tealeaf-http/book/background/2_background.html">Background</a></li>
+      <li><a href="">What is a URL?</a></li>
+      <li><a href="">preparations</a></li>
     </ul>
     <p class="part">HTTP</p>
     <ul class="chapters">
-      <li><a href="/book/http/1_making_requests.html">Making Requests</a></li>
-      <li><a href="/book/http/2_processing_responses.html">Processing Responses</a></li>
-      <li><a href="/book/http/3_stateful_web_application.html">Stateful Web Application</a></li>
-      <li><a href="/book/http/4_security.html">Security</a></li>
-      <li><a href="/book/http/5_conclusion_and_next_steps.html">Conclusion and Next Steps</a></li>
+      <li><a href="">Making Requests</a></li>
+      <li><a href="">Processing Responses</a></li>
+      <li><a href="">Stateful Web Application</a></li>
+      <li><a href="">Security</a></li>
+      <li><a href="">Conclusion and Next Steps</a></li>
     </ul>
   </div>
 </div>
