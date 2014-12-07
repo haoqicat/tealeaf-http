@@ -104,7 +104,7 @@ $ curl -X POST "http://al-blackjack.herokuapp.com/new_player" -d "player_name=Al
 
 HTTP工具和curl发起的```POST```请求跟你在浏览器里填写表单然后提交是一样的, 紧接着我们会被重定向到下一个页面.仔细看看HTTP工具的图片, 看看里面的原始响应数据, 把我们重定向到下一个页面的关键信息在这一行```Location: http://al-blackjack.herokuapp.com/bet```.```Location```和它对应的数据, 就是所谓的HTTP响应头部里的一部分(是的, 你可能也想到了, 请求也有头部, 但是在现在这个例子里, 这是一个响应头部).不要太在意这些细节,在后面章节我们会讨论头部.当你的浏览器看到这个响应头部,然后就会自动向```Location```头部里的URL发起一个全新的,完全独立的请求.你看到的那个"Make a bet"表单, 就是这第二个请求的响应内容.![paw_second_request](http://d186loudes4jlv.cloudfront.net/http/images/http_location.png)
 
-如果你对上面几段内容感到困惑, 那就再多看两遍. 使用浏览器的时候有一点很重要,那就是浏览器对你隐藏了大量的HTTP请求/响应的细节.你的浏览器发起最初的一个```POST```请求, 得到了一个包含```Locating```头部的响应, 然后在不用你参与的情况下发起另一个请求, 然后把第二个请求的到的响应内容展示给你.再重申一次, 如果你使用的是一个纯粹的HTTP工具, 你能看到第一个```POST```请求的```Location```响应头部, 但是这个工具不会自动发起第二个请求.(有些HTTP工具有这个功能, 你可以看看"automatically follow redirects"选项.)
+如果你对上面几段内容感到困惑, 那就再多看两遍. 使用浏览器的时候有一点很重要,那就是浏览器对你隐藏了大量的HTTP请求/响应的细节.你的浏览器发起最初的一个```POST```请求, 得到了一个包含```Locating```头部的响应, 然后在不用你参与的情况下发起另一个请求, 然后把第二个请求得到的响应内容展示给你.再重申一次, 如果你使用的是一个纯粹的HTTP工具, 你能看到第一个```POST```请求的```Location```响应头部, 但是这个工具不会自动发起第二个请求.(有些HTTP工具有这个功能, 你可以看看"automatically follow redirects"选项.)
 
 ###HTTP头部
 HTTP头部允许客户端和服务器在请求/响应的HTTP周期里发送额外的信息.头部,通常是以冒号分隔的键值对儿, 一般是纯文本格式的.我们可以使用**审查器**来看看这些头部.下面这张图你能看到请求和响应都有头部:![http_header](http://d186loudes4jlv.cloudfront.net/http/images/http_headers.png)
