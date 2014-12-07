@@ -23,8 +23,8 @@ title: http
   <div class="table-of-contents">
     <p class="part">BACKGROUND</p>
     <ul class="chapters">
-      <li><a href="tealeaf-http/introduction.html">Introduction</a></li>
-      <li><a href="tealeaf-http/book/background/2_background.html">Background</a></li>
+      <li><a href="introduction.html">Introduction</a></li>
+      <li><a href="book/background/2_background.html">Background</a></li>
       <li><a href="">What is a URL?</a></li>
       <li><a href="">preparations</a></li>
     </ul>
