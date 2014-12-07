@@ -23,9 +23,9 @@ title: http
   <div class="table-of-contents">
     <p class="part">BACKGROUND</p>
     <ul class="chapters">
-      <li><a href="book/background/1_introduction.html">Introduction</a></li>
-      <li><a href="book/background/2_background.html">Background</a></li>
-      <li><a href="">What is a URL?</a></li>
+      <li><a href="book/background/1_Introduction.html">Introduction</a></li>
+      <li><a href="book/background/2_Background.html">Background</a></li>
+      <li><a href="book/background/3_what_is_url.html">What is a URL?</a></li>
       <li><a href="">preparations</a></li>
     </ul>
     <p class="part">HTTP</p>
