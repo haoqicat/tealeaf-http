@@ -41,15 +41,15 @@ URL和IP地址之间的对应由域名解析系统也就是常说的DNS来控制
 5. 最终，浏览器把这个响应作为一个网页的形式呈现在你面前。
 
 有一点你要明白，当你的浏览器发出请求的时候，它只是发送了一些文本到一个IP地址。因为客户端(浏览器)和服务器(请求接收者)之间有一个HTTP形式的约定，或者协议，服务器可以分析请求，了解其组成并将响应发送回web浏览器。然后，web浏览器将响应字符串处理成你能理解的内容。浏览像Facebook，Google和Twitter这样的网站，就意味着你一直在使用HTTP。这些细节都被隐藏了，你的浏览器会自动处理好请求和响应。互联网的不同部分看起来像是这样的：
-![different_parts](http://d186loudes4jlv.cloudfront.net/http/images/internet.png)
+![different_parts](../../images/internet.png)
 ###客户端和服务器
 最常见的客户端是你每天与之交互，被称为Web浏览器的应用程序。Web 浏览器常见的有Internet Explorer、 火狐、 Safari，包括移动版本。Web浏览器的职责是发送HTTP请求，并将响应处理成人类友好的形式显示在你的显示器上。web浏览器并不是唯一的客户端，有很多工具或者应用都能发送HTTP请求。
 
 你的请求的内容最终的接收者是被称为服务器的远程计算机。服务器也没啥神秘的，就是处理请求的设备，它们的工作就是发送一个响应回去。通常情况下，服务器发送回去的响应里面都包含了请求中指定的一些数据。
-![client_and_server](http://d186loudes4jlv.cloudfront.net/http/images/http_client_server.png)
+![client_and_server](../../images/http_client_server.png)
 ###资源(Resources)
 资源是一个通用术语，指的是互联网上你通过URL与其交互的东西。包括了图片，视频，网页和其他文件。资源并不限于文件或者网页。资源也可能是一个软件，一个炒股的软件，一个游戏。互联网上有无数的资源。
-![resources](http://d186loudes4jlv.cloudfront.net/http/images/resources.png)
+![resources](../../images/resources.png)
 
 ###无状态的(statelessness)
 当一个协议设计成每一个请求/响应周期与前一个都是完全无关的话，我们就说这个协议是无状态的。对于HTTP要知道的一点就是，无状态协议对于服务器资源和易用性的影响。也就是说在HTTP一对儿请求/响应之间，服务器不需要挂起等待之类的动作。结果就是当一个请求到达服务器，这个系统的任何部分不会做任何清理。以上两个原因让HTTP协议变的很灵活，但同时也变的很难构建有状态的应用。因为HTTP本质上是个无状态的互联网协议，这就意味着web开发人员在构建有状态应用的时候，不得不努力想办法来模拟web应用中的有状态体验。

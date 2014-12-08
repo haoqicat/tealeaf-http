@@ -9,9 +9,9 @@ title: 安全
 ###安全的HTTP(HTTPS)
 在客户端和服务器互相发送请求和响应的时候, 所有的请求和响应里的信息都是通过明文字符串表示的.如果一个恶意的黑客连接到同一网络，他就可以利用数据包嗅探技术来读取来回发送的消息.正如我们已知道的，请求可以包含会话id，它唯一地标识你到服务器之间的联系，所以如果别人复制了这个会话 id，他们可以手动创建到服务器的请求，伪装成你的客户端，甚至都不需要你的用户名和密码就可以自动登陆.
 
-这种情况就需要安全的HTTP也就是HTTPS来帮忙啦.通过HTTPS访问资源的时候,通常以```https://```开头而不是```http://```, 而且通常在边上都会有个小锁子的图标:![https](http://d186loudes4jlv.cloudfront.net/http/images/https_address_bar.png)
+这种情况就需要安全的HTTP也就是HTTPS来帮忙啦.通过HTTPS访问资源的时候,通常以```https://```开头而不是```http://```, 而且通常在边上都会有个小锁子的图标:![https](../../images/https_address_bar.png)
 
-通过HTTPS发送的请求和响应在发送前都会被加密.这意味着如果一个恶意的黑客监听HTTP通信，他得到的信息都是加密的和无用的。HTTPS通过一个叫做[TLS](http://en.wikipedia.org/wiki/Transport_Layer_Security)的加密协议来加密消息.在TLS开发完成前,早期HTTPS使用```SSL```(Secure Sockets Layer).这些加密协议在数据加密发生之前,使用证书来与远程服务器进行通信和交换安全密钥.你可以点击```https://```前面那个小锁子的图标来查看这些证书:![certificates](http://d186loudes4jlv.cloudfront.net/http/images/secure_http_padlock.png)
+通过HTTPS发送的请求和响应在发送前都会被加密.这意味着如果一个恶意的黑客监听HTTP通信，他得到的信息都是加密的和无用的。HTTPS通过一个叫做[TLS](http://en.wikipedia.org/wiki/Transport_Layer_Security)的加密协议来加密消息.在TLS开发完成前,早期HTTPS使用```SSL```(Secure Sockets Layer).这些加密协议在数据加密发生之前,使用证书来与远程服务器进行通信和交换安全密钥.你可以点击```https://```前面那个小锁子的图标来查看这些证书:![certificates](../../images/secure_http_padlock.png)
 
 在与一个网站进行交互之前, 大多数现代浏览器都会以你的名义对网站的证书做一些检查, 但是有时候自己手动查看一下证书也可以作为一个额外的安全保障.
 
@@ -39,9 +39,9 @@ title: 安全
 ###跨站脚本(XSS)
 我们最后要讨论的这个安全问题, 对所有web开发者来说都很重要, 叫做跨站脚本或者**XSS**.当你允许用户输入HTML, 或者网站可以直接显示javascript时, 就有可能遭受这种攻击.
 
-举个例子, 下面这个表格允许你输入评论, 然后把评论直接显示在网页上:![xss](http://d186loudes4jlv.cloudfront.net/http/images/comment_form.png)
+举个例子, 下面这个表格允许你输入评论, 然后把评论直接显示在网页上:![xss](../../images/comment_form.png)
 
-因为这是一个普通的HTML文本框, 所以用户可以在里面输入任何东西.也就意味着用户可以直接输入原始的HTML和javascript代码, 并把它提交给服务器:![raw](http://d186loudes4jlv.cloudfront.net/http/images/comment_with_html.png)
+因为这是一个普通的HTML文本框, 所以用户可以在里面输入任何东西.也就意味着用户可以直接输入原始的HTML和javascript代码, 并把它提交给服务器:![raw](../../images/comment_with_html.png)
 
 如果服务器端对于用户的输入不做任何无害处理的话, 这些内容就会注入到网页的内容中去, 然后浏览器就会解释执行这些HTML和javascript代码.在本例中会弹出一个警告框, 这当然不是我们想要的结果.恶意用户可以使用HTML和javascript代码对服务器或者以后访问这个页面的用户发起毁灭性的攻击.举个例子, 一个攻击者可以使用javascript代码去获取所有在他之后访问这个页面的用户的会话id, 然后伪装成其他用户.而这一切都发生在受害者一无所知的情况下.而且要注意的是, 这种攻击也能绕过同源策略, 因为这段恶意代码是存在于当前这个网站上的.
 

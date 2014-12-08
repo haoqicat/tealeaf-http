@@ -16,7 +16,7 @@ title: 什么是URL
 * ```http```：通常被称为URL模式(scheme).总是出现在冒号和两个斜杠之前，作用是告诉web客户端怎样去访问一个资源。在本例中，它告诉web客户端使用超文本传输协议也就是HTTP去发起一个请求。常见的URL模式还有```ftp```, ```mailto```和```git```。
 * ```www.example.com```：URL的第二个部分，就是资源路径或主机(host)。它告诉客户端，资源的确切位置。
 * ```/home/```：URL的第三个部分就是URL路径。它代表了客户端正在请求什么样的本地资源(对于服务器来说)。
-![http_components](http://d186loudes4jlv.cloudfront.net/http/images/url_components.png)
+![http_components](../../images/url_components.png)
 
 有时候，这个路径指向了一个主机上特定的资源。比如，```www.example.com/home/index.html```指向了example.com服务器上的一个HTML文件。
 
@@ -42,13 +42,13 @@ http://www.example.com?search=ruby&results=10
 http://www.phoneshop.com?product=iphone&size=32gb&color=white
 ```
 
-![sample_url](http://d186loudes4jlv.cloudfront.net/http/images/query_string_components.png)
+![sample_url](../../images/query_string_components.png)
 
 在上面这个例子里，键/值对儿```product=iphone```, ```size=32gb```, ```color=white``` 通过URL传给了服务器。这个请求告诉```www.phoneshop.com```的服务器，把要请求的资源条件限制在```产品iphone```，```大小32gb```和```颜色白色```。服务器怎么样使用这些参数取决于服务端的应用的处理逻辑。
 
 另一个经常见到查询字符串的情况是当你在搜索引擎上搜索东西的时候。**因为查询字符串是通过URL传递的，他们仅使用HTTP的GET请求**。在本书后面的章节里我们会讨论不同的HTTP请求，但是现在你所需要知道的是，当你不论什么时候在浏览器的地址栏里输入网址进行浏览的时候，你就是在发起HTTP的GET请求。大部分超链接都是HTTP的GET请求，偶尔会有一些例外。
 
-![get_request](http://d186loudes4jlv.cloudfront.net/http/images/query_strings.jpg)
+![get_request](../../images/query_strings.jpg)
 
 使用查询字符串向服务器传递附加信息是个很棒的方法，但是对于查询字符串的使用，以下是一些限制：
 

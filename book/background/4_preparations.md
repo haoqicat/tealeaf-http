@@ -43,13 +43,13 @@ Windows用户可以参照以下步骤安装```curl```:
 	* 64位系统: Win64 OpenSSL v1.0.1j Light
 
 4. 现在去curl的[主页](http://curl.haxx.se/)并选择[下载](http://curl.haxx.se/download.html).
-5. 在下载页面,找到Windows相关的地方,然后点击基于你自己系统的binary SSL-enabled 版本进行下载:![windows_curl_download](http://d186loudes4jlv.cloudfront.net/http/images/curl_download.png)
+5. 在下载页面,找到Windows相关的地方,然后点击基于你自己系统的binary SSL-enabled 版本进行下载:![windows_curl_download](../../images/curl_download.png)
 下载这个文件,然后把```curl.exe```放到一个新的文件夹里.
-6. 从[这里](http://curl.haxx.se/docs/caextract.html)安装一个CA证书.确保右键另存```cacert.pem```这个链接,并且把文件存成```.pem```格式的:![CA](http://d186loudes4jlv.cloudfront.net/http/images/ca_cert_curl.png)
+6. 从[这里](http://curl.haxx.se/docs/caextract.html)安装一个CA证书.确保右键另存```cacert.pem```这个链接,并且把文件存成```.pem```格式的:![CA](../../images/ca_cert_curl.png)
 把这个证书拷贝到你刚才放```curl.exe```的文件夹里
 7. 最后打开你的控制台,进入到你放```curl.exe```的文件夹然后跑下面这个命令:
 	```curl -I GET "http://www.reddit.com/" -m 30 -v```
-	![command](http://d186loudes4jlv.cloudfront.net/http/images/curl_command_prompt.png)
+	![command](../../images/curl_command_prompt.png)
 
 在合适的时候,用```curl```发起请求的命令会出现在书中以帮助使用```curl```的读者.
 

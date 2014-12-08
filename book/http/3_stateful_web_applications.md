@@ -7,7 +7,7 @@ title: 有状态的web应用
 
 ###简介
 我们已经知道HTTP协议是无状态的.换句话说在每一个请求/响应周期之间, 服务器是不会挂起等待信息的.
-![cycle](http://d186loudes4jlv.cloudfront.net/http/images/http_client_server.png)
+![cycle](../../images/http_client_server.png)
 
 发出的每一个对资源的请求都是一个全新的实体, 不同的请求之间并不知道对方的存在.这种无状态使得HTTP和web都是分布式的,难以掌控的, 也是因为HTTP这种短暂的状态属性, 使得web开发者在开发有状态的web应用时十分的困难.
 
@@ -20,10 +20,10 @@ title: 有状态的web应用
 
 ###一个有状态的应用
 让我们来看一个有状态的应用作为开始.当你发起一个请求到```http://www.reddit.com```的时候, 主页是这样的:
-![reddit_home](http://d186loudes4jlv.cloudfront.net/http/images/http_request.png)
+![reddit_home](../../images/http_request.png)
 
 然后输入你的用户名和密码进行登录:
-![reddit_login](http://d186loudes4jlv.cloudfront.net/http/images/dynamic_content.png)
+![reddit_login](../../images/dynamic_content.png)
 
 登录后,在页面上方你就会看到你的用户名, 表示你已经成功通过身份验证.如果你刷新页面, 就会向```http://www.reddit.com```服务器发起一个新的请求, 你会看到, 页面还是那个样子, 你的登录状态还在.这是怎么回事呢? HTTP不是一个无状态协议么? 服务器是怎么知道你的用户名, 并动态显示在页面上的? 哪怕刷新页面发起新的请求也不影响你的登录状态.这种情况非常常见,我们不用多想, 这就是你的网络购物车在你往里加新商品的时候如何保留着你之前的选择, 有时候哪怕过了几天, 你也能看到你购物车里的东西.这就是Gmail如何认出你,并在页面上显示针对你名字的欢迎信息;所有的现代web应用都是这样工作的.
 
@@ -42,33 +42,33 @@ title: 有状态的web应用
 
 ###Cookies
 cookie就是在一个请求/响应周期内, 服务器发送给客户端, 并存储在客户端的一段数据.Cookies 或者 HTTP cookies, 就是存储在浏览器里包含着会话信息的小文件.默认情况下, 大部分浏览器的cookies都是启用的.当你第一次访问一个网站的时候, 服务器会给你发送会话信息并将其存储在你本地电脑浏览器的cookie里.要注意的是真正的会话数据是存在服务器上的.在客户端发起每一个请求的时候, 服务器就会比对客户端的cookie和服务器上的会话数据, 用来标识当前的会话.通过这种方法, 当你再次访问同一个网站的时候, 服务器就会通过cookie和里面的信息来认出你的会话.
-![cookie](http://d186loudes4jlv.cloudfront.net/http/images/cookie_diagram.png)
+![cookie](../../images/cookie_diagram.png)
 
 我们来看一个真实的案例, 用审查器看看cookies是如何被创建的.我们要向```http://www.yahoo.com```发起一个请求.要注意的是, 如果你的浏览器里已经有了Yahoo的cookie, 你可能需要换一个网站.
 
 保持审查器打开, 输入这个网址, 然后看看我们的请求头部:
-![yahoo_cookie](http://d186loudes4jlv.cloudfront.net/http/images/request_no_cookies.png)
+![yahoo_cookie](../../images/request_no_cookies.png)
 
 注意啊, 里面没有任何有关cookies的东西, 接下来我们看看响应头部:
-![yahoo_response](http://d186loudes4jlv.cloudfront.net/http/images/response_cookies.png)
+![yahoo_response](../../images/response_cookies.png)
 
 你会看到有个```set-cookie```头部把cookie数据加到响应里. 在首次访问这个网站的时候这个cookie数据会被设置.最后, 我们发起一个相同的请求然后再来看看请求头部:
-![request_with_cookie](http://d186loudes4jlv.cloudfront.net/http/images/request_cookies_set.png)
+![request_with_cookie](../../images/request_cookies_set.png)
 
 你会看到有个```cookie```头部出现了(注意这个是请求头部, 就是说这是要从你的客户端发送到服务器的). 里面的内容是上一个响应头部```set-cookie```的值.这一小段数据, 会出现在你每一个发起的请求里, 用来唯一标识你 --- 或者说的清楚点, 标识你的客户端, 也就是你的浏览器.你电脑里的浏览器存储这些cookie.现在, 就算你关掉浏览器, 关掉电脑, cookie里的信息也不会消失的.
 
 现在让我们回到本章最初的那个例子, 关于Reddit和其他web应用是如何在我们发起的一个又一个请求中记住我们的登录状态.记住, 每一个请求都是独立的, 不知道彼此存在的, 那么问题来了, 应用程序是如何"记住"我们的登录状态呢? 如果你要跟着做, 保持审查器打开, 然后按照下面的步骤来:
 
 1. 点击resources标签然后访问```http://www.reddit.com```
-2. 把cookies那部分展开, 然后点击```www.reddit.com```, 你就能在value那一列看到第一次发起请求后服务器返回给我们的cookie了:![reddit_cookie](http://d186loudes4jlv.cloudfront.net/http/images/reddit_no_session.png)
-3. 然后登录, 你应该能看到在最后一行出现了一个唯一的会话会话id.这个会话id会存在你浏览器的cookie里, 从此后你每一个到Reddit.com的请求都会附上这个会话id:![reddit_session_id](http://d186loudes4jlv.cloudfront.net/http/images/reddit_with_session.png)
+2. 把cookies那部分展开, 然后点击```www.reddit.com```, 你就能在value那一列看到第一次发起请求后服务器返回给我们的cookie了:![reddit_cookie](../../images/reddit_no_session.png)
+3. 然后登录, 你应该能看到在最后一行出现了一个唯一的会话会话id.这个会话id会存在你浏览器的cookie里, 从此后你每一个到Reddit.com的请求都会附上这个会话id:![reddit_session_id](../../images/reddit_with_session.png)
 
 现在每一个请求都会包含这个会话id, 这样服务器就能唯一确认你这个客户端啦.当服务器接收到一个带有会话id的请求, 它就会根据这个id去找对应的数据, 在这个对应的数据里就有服务器"记住"的客户端的状态, 或者说的清楚点儿, 就是这个会话id的状态.
 
 >####会话数据存在哪里?
 >一句话: 服务器的某个地方.有时候, 仅仅存在于内存, 而其他时候, 可能会存在某个持久化存储介质上, 比如数据库或者键/值存储.会话数据存在哪里不是我们现在需要关心的.现在重要的是要理解会话id 存储在客户端, 被当做是访问存储在服务器上的会话数据的"钥匙".web应用就是这样围绕着无状态的HTTP来工作的.
 
-还有一点非常重要,在一个会话里发出的会话id是唯一的, 而且有一个很短的过期时间.对上面的例子来说, 在会话过期后你需要重新登录.如果我们退出登录, 会话id就会消失:![session_id_gone](http://d186loudes4jlv.cloudfront.net/http/images/reddit_logged_out.png)
+还有一点非常重要,在一个会话里发出的会话id是唯一的, 而且有一个很短的过期时间.对上面的例子来说, 在会话过期后你需要重新登录.如果我们退出登录, 会话id就会消失:![session_id_gone](../../images/reddit_logged_out.png)
 
 如果你手动删掉会话id也是一个效果(在审查器里, 右键cookies然后删除), 可以说我们从本质上做了一次退出登录.
 
@@ -80,8 +80,8 @@ cookie就是在一个请求/响应周期内, 服务器发送给客户端, 并存
 Facebook的服务器会把页面上所有照片和状态的赞和评论都组合起来,然后显示在你的时间线上.在前面的讨论中, 我们知道, 为每一个请求都重新生成一次页面的成本是非常高的(记住, 你的每一个动作, 点个链接, 提交个表单, 都会发起一个新的请求).
 
 当使用AJAX的时候, 所有客户端发送的请求都是异步的, 就是说页面不会刷新.举个例子, 当我们在google上搜索的时候:
-* 访问Google主页```http://www.google.com```, 然后打开审查器, 看Network标签, 里面内容是空的![google_empty_network](http://d186loudes4jlv.cloudfront.net/http/images/empty_network_tab.png)
-* 当你开始搜索的时候, 你会在Network标签看到请求如潮水般发起:![start_search](http://d186loudes4jlv.cloudfront.net/http/images/ajax_google_search.png)
+* 访问Google主页```http://www.google.com```, 然后打开审查器, 看Network标签, 里面内容是空的![google_empty_network](../../images/empty_network_tab.png)
+* 当你开始搜索的时候, 你会在Network标签看到请求如潮水般发起:![start_search](../../images/ajax_google_search.png)
 
 很明显发起了很多请求, 但是你应该能注意到,页面没有整个刷新. 然而这个Network标签的内容给了我们一些关于发生了什么的新见解: 你打的每一个字都会发起一个新的请求, 也就意味着你每按一下键盘都会触发一个AJAX请求.这些请求的响应会通过一些回调来处理.你可以这样理解```回调```, 就是你把一些逻辑存放在某个函数里, 当某个条件被触发之后再回来执行你前面存放的逻辑.
 在本例中, 当响应返回的时候, 回调就会被触发.你可能已经猜到了, 这个回调处理那些异步的请求和响应, 并用新的搜索结果去更新网页上的HTML.
