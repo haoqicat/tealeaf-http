@@ -147,9 +147,13 @@ body {
   margin-top: 25px;
   color: #E0E0E0;
 }
+.content.details {
+  background: #FFF;
+}
 .book-wrapper {
   width: 1000px;
-  margin: 40px auto;
+  padding: 40px 0;
+  margin: 0 auto;
 }
 .chapter-contents {
   width: 700px;
@@ -160,6 +164,18 @@ body {
   line-height: 36px;
   font-size: 16px;
 }
+.chapter-contents h1 {
+  font-family: "Crete Round", Georgia, Times New Roman, serif;
+  font-size: 24px;
+  color: #E5533C;
+  margin-top: 0;
+  text-align: center;
+}
+.chapter-contents h3 {
+  font-family: "Crete Round", Georgia, Times New Roman, serif;
+  font-size: 18px;
+  color: #14877E;
+}
 .book-wrapper img {
   display: block;
   width: 700px;
@@ -167,4 +183,39 @@ body {
 .book-wrapper img[alt="certificates"] {
   display: block;
   width: 291px;
+}
+.index-table {
+  border-collapse: collapse;
+  width: 700px;
+  margin: 60px auto;
+}
+.index-table>tbody>tr>td {
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  padding: 20px;
+  vertical-align: middle;
+}
+.index-table .chapter-title {
+  padding: 0 !important;
+  font-size: 18px;
+}
+.index-table .even {
+  background-color: #f9f9f9;
+}
+.chapter-wrap:hover {
+  background-color: #1BBFB1;
+  color: white;
+}
+.chapter-wrap:hover a{
+  color: #fff !important;
+}
+.index-table .chapter-title a {
+  display: block;
+  padding: 20px;
+  color: #14877E;
+  text-decoration: none;
+}
+.index-table .chapter-index {
+   text-align: center;
+   width: 80px;
 }

@@ -21,20 +21,63 @@ title: http
 </section>
 <div class="wrapper-inside clearfix">
   <div class="table-of-contents">
-    <p class="part">BACKGROUND</p>
-    <ul class="chapters">
-      <li><a href="book/background/1_introduction.html">Introduction</a></li>
-      <li><a href="book/background/2_background.html">Background</a></li>
-      <li><a href="book/background/3_what_is_url.html">What is a URL?</a></li>
-      <li><a href="book/background/4_preparations.html">Preparations</a></li>
-    </ul>
-    <p class="part">HTTP</p>
-    <ul class="chapters">
-      <li><a href="book/http/1_making_requests.html">Making Requests</a></li>
-      <li><a href="book/http/2_processing_responses.html">Processing Responses</a></li>
-      <li><a href="book/http/3_stateful_web_applications.html">Stateful Web Applications</a></li>
-      <li><a href="book/http/4_security.html">Security</a></li>
-      <li><a href="book/http/5_conclusion_and_next_steps.html">Conclusion and Next Steps</a></li>
-    </ul>
+    <table class="index-table">
+      <tbody>
+        <tr class="chapter-wrap">
+         <td class="chapter-index">1</td>
+         <td class="chapter-title">
+           <a href="book/background/1_introduction.html">Introduction</a>
+         </td>
+        </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">2</td>
+          <td class="chapter-title">
+            <a href="book/background/2_background.html">Background</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap">
+          <td class="chapter-index">3</td>
+          <td class="chapter-title">
+            <a href="book/background/3_what_is_url.html">What is a URL?</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">4</td>
+          <td class="chapter-title">
+            <a href="book/background/4_preparations.html">Preparations</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap">
+          <td class="chapter-index">5</td>
+          <td class="chapter-title">
+            <a href="book/http/1_making_requests.html">Making Requests</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">6</td>
+          <td class="chapter-title">
+            <a href="book/http/2_processing_responses.html">Processing Responses</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap">
+          <td class="chapter-index">7</td>
+          <td class="chapter-title">
+            <a href="book/http/3_stateful_web_applications.html">Stateful Web Applications</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">8</td>
+          <td class="chapter-title">
+            <a href="book/http/4_security.html">Security</a>
+          </td>
+        </tr>
+        <tr class="chapter-wrap">
+          <td class="chapter-index">9</td>
+          <td class="chapter-title">
+            <a href="book/http/5_conclusion_and_next_steps.html">Conclusion and Next Steps</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
