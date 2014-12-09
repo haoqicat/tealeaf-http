@@ -1,0 +1,11 @@
+.chapter-contents p>code, .chapter-contents ul>code,
+.chapter-contents ol>code, .chapter-contents li>code {
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #F5F5F5;
+  color: #14877E;
+  border-radius: 4px;
+  font-size: 15px;
+}

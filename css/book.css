@@ -176,6 +176,11 @@ body {
   font-size: 18px;
   color: #14877E;
 }
+.chapter-contents a {
+  color: #14877E;
+  text-decoration: none;
+  border-bottom: 1px dotted #1BBFB1;
+}
 .book-wrapper img {
   display: block;
   width: 700px;
