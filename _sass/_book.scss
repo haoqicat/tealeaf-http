@@ -148,15 +148,16 @@ body {
   color: #E0E0E0;
 }
 .content.details {
-  background: #FFF;
+  background: #F5F5F5;
 }
 .book-wrapper {
   width: 1000px;
-  padding: 40px 0;
+  padding: 40px 0 60px;
   margin: 0 auto;
+  background: #FFF;
 }
 .chapter-contents {
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
   font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -184,6 +185,7 @@ body {
 .book-wrapper img {
   display: block;
   width: 700px;
+  margin: 20px auto;
 }
 .book-wrapper img[alt="certificates"] {
   display: block;
