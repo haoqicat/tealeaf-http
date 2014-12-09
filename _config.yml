@@ -1,6 +1,7 @@
 # Site settings
 host: "0.0.0.0"
-#baseurl: "/tealeaf-http/"
+# comment the line on local development env
+baseurl: "/tealeaf-http/"
 
 # Build settings
 markdown: kramdown
