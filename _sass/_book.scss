@@ -191,10 +191,22 @@ body {
   display: block;
   width: 291px;
 }
+.table-of-contents {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+p.part {
+  font-family: "Crete Round", Georgia, Times New Roman, serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #14877E;
+  margin: 30px 0;
+  text-align: center;
+}
 .index-table {
   border-collapse: collapse;
   width: 700px;
-  margin: 60px auto;
+  margin: 0 auto 30px;
 }
 .index-table>tbody>tr>td {
   border: 1px solid #ddd;
@@ -223,6 +235,6 @@ body {
   text-decoration: none;
 }
 .index-table .chapter-index {
-   text-align: center;
-   width: 80px;
+  text-align: center;
+  width: 80px;
 }

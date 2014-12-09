@@ -21,6 +21,7 @@ title: http
 </section>
 <div class="wrapper-inside clearfix">
   <div class="table-of-contents">
+    <p class="part">background</p>
     <table class="index-table">
       <tbody>
         <tr class="chapter-wrap">
@@ -47,32 +48,37 @@ title: http
             <a href="book/background/4_preparations.html">Preparations</a>
           </td>
         </tr>
+      </tbody>
+    </table>
+    <p class="part">http</p>
+    <table class="index-table">
+      <tbody>
         <tr class="chapter-wrap">
-          <td class="chapter-index">5</td>
+          <td class="chapter-index">1</td>
           <td class="chapter-title">
             <a href="book/http/1_making_requests.html">Making Requests</a>
           </td>
         </tr>
         <tr class="chapter-wrap even">
-          <td class="chapter-index">6</td>
+          <td class="chapter-index">2</td>
           <td class="chapter-title">
             <a href="book/http/2_processing_responses.html">Processing Responses</a>
           </td>
         </tr>
         <tr class="chapter-wrap">
-          <td class="chapter-index">7</td>
+          <td class="chapter-index">3</td>
           <td class="chapter-title">
             <a href="book/http/3_stateful_web_applications.html">Stateful Web Applications</a>
           </td>
         </tr>
         <tr class="chapter-wrap even">
-          <td class="chapter-index">8</td>
+          <td class="chapter-index">4</td>
           <td class="chapter-title">
             <a href="book/http/4_security.html">Security</a>
           </td>
         </tr>
         <tr class="chapter-wrap">
-          <td class="chapter-index">9</td>
+          <td class="chapter-index">5</td>
           <td class="chapter-title">
             <a href="book/http/5_conclusion_and_next_steps.html">Conclusion and Next Steps</a>
           </td>
