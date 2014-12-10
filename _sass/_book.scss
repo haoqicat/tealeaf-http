@@ -55,6 +55,13 @@ body {
 }
 .top-bg {
   min-height: 70px;
+  .home {
+    text-align: center;
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
 }
 .content {
   padding: 0 0 70px 0;
@@ -75,7 +82,7 @@ body {
   font-family: "Crete Round", Georgia, "Times New Roman", Times, serif;
 }
 .top-large .book-title {
-  font-size: 36px;
+  font-size: 30px;
   color: #E5533C;
   margin-top: 35px;
 }
@@ -84,6 +91,10 @@ body {
   font-size: 18px;
   margin-top: 20px;
   position: relative;
+  a {
+    color: #14877E;
+    text-decoration: none;
+  }
 }
 .top-large .book-author:after {
   content: " ";
@@ -112,10 +123,11 @@ body {
   color: #FFF;
   text-decoration: none;
   font-family: "myriad-pro", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   padding: 10px 30px;
   margin: 40px auto 0;
+  margin-right: 20px;
 }
 .book-image {
   float: left;
