@@ -21,7 +21,22 @@ title: http
     <img alt="Http" class="book-image" src="images/http.png"/>
   </div>
 </section>
-<div class="wrapper-inside clearfix">
+<div class="divider">
+  <a href="https://github.com/happypeter/tealeaf-http">Github 书稿仓库，欢迎参与翻译！</a>
+</div>
+<div class="reviewers">
+  <div class="name-card">
+    <img src="images/kevin.png" alt="kevin">
+    <div class="text">
+      <div class="name">
+        <a href="http://www.gotealeaf.com/">Kevin Wang</a>
+      </div>
+      <div class="job-title"><a href="http://www.gotealeaf.com/">茶叶学院联合创始人</a></div>
+      感谢 @happypeter 和 Ruby China 社区的中文翻译工作， 希望能对学习 web 开发的新手有所帮助。
+    </div>
+  </div>
+</div>
+<div class="contents-wrapper">
   <div class="table-of-contents" id="chinese">
     <p class="part">背景知识</p>
     <table class="index-table">
@@ -89,3 +104,5 @@ title: http
     </table>
   </div>
 </div>
+
+

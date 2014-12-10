@@ -18,11 +18,14 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #14877E;
+  text-decoration: none;
+}
 #wrapper {
   position: relative;
   min-height: 100%;
   height: auto !important;
-  background: #F5F5F5;
 }
 .wrapper-inside {
   width: 1000px;
@@ -68,11 +71,6 @@ body {
 }
 .book {
   width: 100%;
-  background: url("../images/light-code-bg.png") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin: 0 auto;
 }
 .top-large {
@@ -91,10 +89,6 @@ body {
   font-size: 18px;
   margin-top: 20px;
   position: relative;
-  a {
-    color: #14877E;
-    text-decoration: none;
-  }
 }
 .top-large .book-author:after {
   content: " ";
@@ -139,27 +133,19 @@ body {
   height: 70px;
   position: absolute;
   bottom: 0;
+  .nav {
+    background: #333;
+    min-height: 70px;
+    color: #FFF;
+  }
+  p {
+    line-height: 70px;
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+  }
 }
-#footer .nav {
-  background: #333;
-  min-height: 70px;
-}
-#footer .nav ul {
-  width: 595px;
-  margin-top: 25px;
-}
-#footer .nav ul li {
-  color: #E0E0E0;
-}
-#footer .nav #copyright {
-  float: right;
-  color: #FFF;
-  font-family: "myriad-pro", sans-serif;
-  font-size: 14px;
-  margin-top: 25px;
-  color: #E0E0E0;
-}
-.content.details {
+.book-content {
   background: #F5F5F5;
 }
 .book-wrapper {
@@ -167,6 +153,10 @@ body {
   padding: 40px 0 60px;
   margin: 0 auto;
   background: #FFF;
+}
+.contents-wrapper {
+  background: #F5F5F5;
+  padding: 30px 0;
 }
 .chapter-contents {
   width: 800px;
@@ -204,15 +194,18 @@ body {
   width: 291px;
 }
 .table-of-contents {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 800px;
+  margin: 30px auto;
+  background: #FFF;
 }
 p.part {
   font-family: "Crete Round", Georgia, Times New Roman, serif;
   font-size: 20px;
   text-transform: uppercase;
   color: #14877E;
-  margin: 30px 0;
+  margin: 20px 0;
   text-align: center;
 }
 .index-table {
@@ -249,4 +242,70 @@ p.part {
 .index-table .chapter-index {
   text-align: center;
   width: 80px;
+}
+
+.name-card {
+  img {
+    width: 60px;
+    display: table-cell;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .text {
+    display: table-cell;
+    font-size: 14px;
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Crete Round";
+      font-style: italic;
+      color: #E5533C;
+    }
+    .job-title {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.name-card {
+  background: transparent;
+  position: relative;
+  margin-bottom: 3em;
+  background: #FFF;
+  padding: 2em;
+  border-right: 30px solid #FFF;
+  min-height: 147px;
+  width: 800px;
+  margin: 50px auto;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -ms-transform: skew(-3deg, -2deg);
+    -webkit-transform: skew(-3deg, -2deg);
+    -o-transform: skew(-3deg, -2deg);
+    -moz-transform: skew(-3deg, -2deg);
+    bottom: 14px;
+    box-shadow: 0 16px 5px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    left: 1px;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+.divider {
+  margin-top: 50px;
+  min-height: 70px;
+  background: #008080;
+  text-align: center;
+  a {
+    color: #FFF;
+    display: block;
+    line-height: 70px;
+    font-size: 18px;
+  }
 }
