@@ -3,7 +3,9 @@
 # Download all of pictures to local images directory and change
 # the related image positions in every chapter
 
-Dir["*/*"].each do |f|
+root = File.expand_path(File.join(File.dirname(__FILE__), '..', 'book'))
+
+Dir["#{root}/*/*"].each do |f|
   s = IO.read(f)
   new = s.gsub(/(\!\[.*?\])\((http:.*?)\)/) do |l|
     a = $1.chomp
