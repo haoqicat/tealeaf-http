@@ -64,6 +64,9 @@ a {
   a {
     color: #FFF;
     text-decoration: none;
+    &:hover {
+      color: #77F0F0;
+    }
   }
 }
 .content {
@@ -89,6 +92,9 @@ a {
   font-size: 18px;
   margin-top: 20px;
   position: relative;
+  a:hover {
+    text-decoration: underline;
+  }
 }
 .top-large .book-author:after {
   content: " ";
@@ -137,6 +143,9 @@ a {
     background: #333;
     min-height: 70px;
     color: #FFF;
+    a:hover {
+      text-decoration: underline;
+    }
   }
   p {
     line-height: 70px;
@@ -266,6 +275,9 @@ p.part {
     }
     .job-title {
       margin-bottom: 15px;
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -307,5 +319,8 @@ p.part {
     display: block;
     line-height: 70px;
     font-size: 18px;
+    &:hover {
+      color: #77F0F0;
+    }
   }
 }
