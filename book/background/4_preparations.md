@@ -4,27 +4,28 @@ title: 准备工作
 ---
 
 # 准备工作
-对于 HTTP 的基础做了些概览之后，让我们来熟悉一下会在本书中用到，用于展示 HTTP 如何工作的工具。接下来会介绍一些你可能会需要到的工具。有一个重点是你需要知道的，那就是阅读本书的时候，你使用什么工具都无所谓，所以挑一个你用着顺手的就好。
+对于 HTTP 的基础做了些概览之后，让我们来熟悉一下会在本书中用到，用于展示 HTTP 如何工作的工具。其实，阅读本书的时候，使用什么工具都无所谓，所以挑一个你用着顺手的就好。
 
 ### 浏览器插件
 Google 的 Chrome 浏览器有几个插件你可以用，比如 [Postman](https://chrome.google.com/webstore/search/Postman?hl=en-US) 和 [REST HTTP API Client](https://chrome.google.com/webstore/detail/dhc-resthttp-api-client/aejoelaoggembcahagimdiliamlcdmfm)。
 
-###HTTP GUI 工具
-在本书中我们会经常使用图形化的 HTTP 工具. 说到 HTTP 工具这个话题那能说的就太多了，所以长话短说，我们使用 [Paw2](http://luckymarmot.com/paw).虽然这是一个 Mac App Store 里的付费应用，不过它也有免费试用期，够你看这本书的时候用了。
+### HTTP GUI 工具
+在本书中我们会经常使用图形化的 HTTP 工具。说到 HTTP 工具这个话题那能说的就太多了，所以长话短说，我们使用 [Paw2](http://luckymarmot.com/paw).虽然这是一个 Mac App Store 里的付费应用，不过它也有免费试用期，够你看这本书的时候用了。
 
-尽管如此，还有很多其他备选方案.简单介绍几个很棒的吧: [HTTP Client](http://ditchnet.org/httpclient/)，[Fiddler](http://www.telerik.com/fiddler) 和 [Cocoa Rest Client](http://ditchnet.org/httpclient/)。
+尽管如此，还有很多其他备选方案。简单介绍几个很棒的吧: [HTTP Client](http://ditchnet.org/httpclient/)，[Fiddler](http://www.telerik.com/fiddler) 和 [Cocoa Rest Client](http://ditchnet.org/httpclient/)。
 
-###HTTP 命令行工具
+### HTTP 命令行工具
 
 [curl](http://curl.haxx.se/) 是一个免费的命令行工具，经常被用于发送 HTTP 请求。
 
-####Mac OS X/Linux:
+#### Mac OS X/Linux:
 OS X 和大部分的 Linux 发行版应该都预装了 curl，你可以在命令行里非常方便的使用它，类似这样:
+
 ```ruby
 $ curl www.usa.gov
 ```
 
-####Windows:
+#### Windows:
 
 >#### 警告
 
@@ -51,6 +52,6 @@ Windows 用户可以参照以下步骤安装```curl```:
 	```curl -I GET "http://www.reddit.com/" -m 30 -v```
 	![command](../../images/curl_command_prompt.png)
 
-在合适的时候，用```curl```发起请求的命令会出现在书中以帮助使用```curl```的读者。
+可以的话，书中会展示用```curl```发起请求的命令，以帮助使用```curl```的读者。
 
 
