@@ -19,16 +19,16 @@ Google 的 Chrome 浏览器有几个插件你可以用，比如 [Postman](https:
 [curl](http://curl.haxx.se/) 是一个免费的命令行工具，经常被用于发送 HTTP 请求。
 
 #### Mac OS X/Linux:
-OS X 和大部分的 Linux 发行版应该都预装了 curl，你可以在命令行里非常方便的使用它，类似这样:
+OS X 和大部分的 Linux 发行版应该都预装了 curl，你可以在命令行里非常方便的使用它，类似这样：
 
-```ruby
+{% highlight ruby %}
 $ curl www.usa.gov
-```
+{% endhighlight %}
 
 #### Windows:
 
 >#### 警告
-
+>
 >以下操作需要对 Windows 些底层工具比较熟悉。
 >
 >如果你在使用 Windows 并且对以下安装操作感到不适，强烈推荐你使用 GUI 工具，不论是浏览器插件还是安装到你系统上的软件都行。
@@ -40,6 +40,7 @@ Windows 用户可以参照以下步骤安装```curl```:
 1. 安装 [Visual C++ 2008 Redistributable Package](http://www.microsoft.com/en-us/download/details.aspx?id=15336)。
 2. 安装 [Visual C++ 2010 Redistributable Package](http://www.microsoft.com/en-us/download/details.aspx?id=14632)。
 3. 接下来安装 [OpenSSL](http://www.shininglightpro.com/products/Win32OpenSSL.html):
+
 	* 32 位系统: Win32 OpenSSL v1.0.1j Light
 	* 64 位系统: Win64 OpenSSL v1.0.1j Light
 
@@ -48,10 +49,8 @@ Windows 用户可以参照以下步骤安装```curl```:
 下载这个文件，然后把```curl.exe```放到一个新的文件夹里。
 6. 从 [这里](http://curl.haxx.se/docs/caextract.html) 安装一个 CA 证书.确保右键另存```cacert.pem```这个链接，并且把文件存成```.pem```格式的:![CA](../../images/ca_cert_curl.png)
 把这个证书拷贝到你刚才放```curl.exe```的文件夹里
-7. 最后打开你的控制台，进入到你放```curl.exe```的文件夹然后跑下面这个命令:
-	```curl -I GET "http://www.reddit.com/" -m 30 -v```
-	![command](../../images/curl_command_prompt.png)
+7. 最后打开你的控制台，进入到你放```curl.exe```的文件夹然后跑下面这个命令: ```curl -I GET "http://www.reddit.com/" -m 30 -v```
+
+![command](../../images/curl_command_prompt.png)
 
 可以的话，书中会展示用```curl```发起请求的命令，以帮助使用```curl```的读者。
-
-
