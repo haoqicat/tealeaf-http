@@ -7,7 +7,6 @@ title: 发起 HTTP 请求
 
 ### 浏览器的 HTTP 请求
 
-
 发起一个 HTTP 请求很容易。比如你说你想用浏览器访问 Reddit 。你所需要做的仅仅是启动浏览器然后在地址栏输入 [http://www.reddit.com](http://www.reddit.com)，然后你就可以看到:
 
 ![reddit](../../images/http_request.png)
@@ -22,19 +21,20 @@ title: 发起 HTTP 请求
 
 ![paw_response](../../images/http_tool.png)
 
-
 跟你在浏览器里看到的简直就是天壤之别啊！如果你以前从来没见过原始的 HTTP 响应数据，这可能让你有点吃惊。你现在看到的这些，其实就是你浏览器接收到的数据，只不过是浏览器把这一堆数据处理成了人类友好的格式。
 
 如果你学习 HTTP 的知识是为了成为一个 web 开发者，你需要学着阅读原始的 HTTP 响应数据。当然你不用在你的脑海里把这些数据解析成一个高清晰度的画面，但是你应该对这些响应代表着什么有一个整体上的概念。等你有了足够的经验，你就可以深入原始的 HTTP 响应数据去做一些 debug 工作和一探其究竟。
 
 ### 使用审查器 (Inspector)
+
 所有现代浏览器都有查看 HTTP 请求和响应的方法，通常都叫做**审查器**。我们使用 [Chrome 审查器](https://developer.chrome.com/devtools)，演示一下如何用它来分析你浏览器的 HTTP 通信。
 
 1. 打开 Chrome 浏览器，点击右上角的菜单，选择工具，然后选择开发者工具，这样就打开审查器了。
 2. 在地址栏输入 [http://www.reddit.com](http://www.reddit.com)，来给 Reddit 重新发送一个新的请求。
 3. 以上两个步骤要确保审查器开着啊，然后点击 Network 标签:![inspector_network](../../images/reddit__the_front_page_of_the_internet.png)
 4. 你应该注意的第一件事是，这里会有很多项。每一项都是一个单独的请求，也就是说，仅仅是访问了这一个 URL，你的浏览器就发起了多个请求，一个请求对应着一个资源 （图片，文件等等）。点击一下对主页的第一个请求，就是```www.reddit.com```那项:![inspector_first](../../images/inspector_reddit.png)
-5. 这里，你就能看到特定的请求头部，cookies，还有原始的响应数据:![inspector_data](../../images/chrome_http_headers.png) 在默认的子标签 *Headers* 里显示了发给服务器的请求头部和接收到的服务器返回来的响应头部。接下来点击 *Response* 子标签去看看原始响应数据。![inspector_raw](../../images/chrome_http_response.png) 这个响应数据看起来应该跟我们前面使用 HTTP 工具得到的差不多。
+5. 这里，你就能看到特定的请求头部，cookies，还有原始的响应数据:![inspector_data](../../images/chrome_http_headers.png) 在默认的子标签 *Headers* 里显示了发给服务器的请求头部和接收到的服务器返回来的响应头部。接下来点击 *Response* 子标签去看看原始响应数据。![inspector_raw](../../images/chrome_http_response.png)
+这个响应数据看起来应该跟我们前面使用 HTTP 工具得到的差不多。
 
 另一个要注意的事情是，当我们使用审查器的时候，在 *Network* 标签下，除了第一个请求，还有一堆其他请求的返回：![inspector_others](../../images/network_tab_resources.png)
 
