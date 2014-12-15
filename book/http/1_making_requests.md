@@ -78,8 +78,11 @@ https://itunes.apple.com/search?term=Michael%20Jackson
 
 这里我们仅仅是给```https://itunes.apple.com/```的服务器发送了一个带着参数 ```term=Michael%20Jackson``` 的 HTTP ```GET``` 请求，其中```%20```是空格的 URL 编码字符。
 
-这个例子所用的```curl```命令是这样的：
+这个例子所用的 ```curl``` 命令是这样的：
 
+{% highlight ruby%}
+$ curl -X GET "https://itunes.apple.com/search?term=Michael%20Jackson" -m 30 -v
+{% endhighlight %}
 
 以上就是你现阶段需要知道的所有关于发起 HTTP ```GET``` 请求的所有知识。主要的概念有以下几点：
 
