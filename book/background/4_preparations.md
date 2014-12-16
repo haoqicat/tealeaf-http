@@ -40,10 +40,8 @@ Windows 用户可以参照以下步骤安装```curl```:
 1. 安装 [Visual C++ 2008 Redistributable Package](http://www.microsoft.com/en-us/download/details.aspx?id=15336)。
 2. 安装 [Visual C++ 2010 Redistributable Package](http://www.microsoft.com/en-us/download/details.aspx?id=14632)。
 3. 接下来安装 [OpenSSL](http://www.shininglightpro.com/products/Win32OpenSSL.html):
-
-	* 32 位系统: Win32 OpenSSL v1.0.1j Light
-	* 64 位系统: Win64 OpenSSL v1.0.1j Light
-
+    * 32 位系统: Win32 OpenSSL v1.0.1j Light
+    * 64 位系统: Win64 OpenSSL v1.0.1j Light
 4. 现在去 curl 的 [主页](http://curl.haxx.se/) 并选择 [下载](http://curl.haxx.se/download.html)。
 5. 在下载页面，找到 Windows 相关的地方，然后点击基于你自己系统的 binary SSL-enabled 版本进行下载:![windows_curl_download](../../images/curl_download.png)
 下载这个文件，然后把```curl.exe```放到一个新的文件夹里。
