@@ -324,3 +324,22 @@ p.part {
     }
   }
 }
+
+table {
+  font-size: 0.8em;
+  width: 100%;
+  margin-bottom: 20px;
+}
+table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th,
+table>tbody>tr>td, table>tfoot>tr>th, table>tfoot>tr>td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #DDD;
+}
+table>thead>tr>th:first-child {
+  width: 150px;
+}
+table>thead>tr>th:last-child {
+  width: 450px;
+}

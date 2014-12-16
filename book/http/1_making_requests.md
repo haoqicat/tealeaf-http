@@ -141,7 +141,7 @@ HTTP 头部允许客户端和服务器在请求/响应的 HTTP 周期里发送�
 请求头部提供更多关于服务器和要获取的资源的信息。一些有用的请求头部是:
 
 | 字段名  | 描述  | 举例 |
-|:------------- |:---------------| :-------------|
+|:------------- |:---------------|:-------------|
 | Host     | 服务器域名 | Host:www.reddit.com  |
 | Accept-Language | 可接受的语言 | Accept-Language: en-US，en;q=0.8 |
 | User-Agent | 一个标识客户端的字符串 |User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML，like Gecko) Chrome/38.0.2125.101 Safari/537.36|
