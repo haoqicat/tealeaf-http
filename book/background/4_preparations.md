@@ -21,9 +21,9 @@ Google 的 Chrome 浏览器有几个插件你可以用，比如 [Postman](https:
 #### Mac OS X/Linux:
 OS X 和大部分的 Linux 发行版应该都预装了 curl，你可以在命令行里非常方便的使用它，类似这样：
 
-{% highlight ruby %}
+```ruby
 $ curl www.usa.gov
-{% endhighlight %}
+```
 
 #### Windows:
 

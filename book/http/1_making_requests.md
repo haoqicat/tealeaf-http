@@ -40,9 +40,9 @@ title: 发起 HTTP 请求
 
 为什么会出现这些额外的响应，谁发起的这些请求？ 事情是这样的，当我们请求资源的时候，最初的对于```www.reddit.com```的请求，返回了一些 HTML。 这些 HTML 里又引用了其他的资源比如图片，CSS 文件，javascript 文件等等。你的浏览器，很聪明也很给力。它明白，为了展示出一个能够给人看的网页，它必须去把这些引用到的资源也一并拿来. 因此浏览器就会对得到的初次响应里的每一个资源再一一发起请求。当你在 *Network* 标签里往下滚动页面，你就能看到所有的相关资源。这些其他的请求保证了这个网页和其他一些东西能正常良好的显示在你的屏幕上.整体来看，浏览器的审查器对于相关的引用资源给你了一个良好的体验.另一方面，一个纯粹的 HTTP 工具，只会返回**一个**巨大的响应数据，并不会自动拉取引用的资源.一个用```curl```发起的请求可以这样写：
 
-{% highlight ruby %}
+```ruby
 $ curl -X GET "http://www.reddit.com/" -m 30 -v
-{% endhighlight %}
+```
 
 然后你看到的应该只是一个请求，一个响应包含着 HTML，但是没有那些你在浏览器里看到的自动发起的额外请求。
 
@@ -62,15 +62,15 @@ $ curl -X GET "http://www.reddit.com/" -m 30 -v
 
 使用 ```curl``` 的读者呢，可以在终端里敲入以下命令：
 
-{% highlight ruby%}
+```ruby
 curl -X GET "http://www.reddit.com/" -m 30 -v
-{% endhighlight %}
+```
 
 我们也可以用 HTTP 工具发送带查询字符串的请求.举个例子，我们发起一个带查询字符串的请求去搜索```https://itunes.apple.com/```里所有跟```Michael Jackson```有关的东西.请求使用的 URL 长这样：
 
-{% highlight ruby%}
+```ruby
 https://itunes.apple.com/search?term=Michael%20Jackson
-{% endhighlight %}
+```
 
 还是那句话，用 Paw 的，发起请求前确保选的是```GET```。
 
@@ -80,9 +80,9 @@ https://itunes.apple.com/search?term=Michael%20Jackson
 
 这个例子所用的 ```curl``` 命令是这样的：
 
-{% highlight ruby%}
+```ruby
 $ curl -X GET "https://itunes.apple.com/search?term=Michael%20Jackson" -m 30 -v
-{% endhighlight %}
+```
 
 以上就是你现阶段需要知道的所有关于发起 HTTP ```GET``` 请求的所有知识。主要的概念有以下几点：
 
@@ -100,9 +100,9 @@ $ curl -X GET "https://itunes.apple.com/search?term=Michael%20Jackson" -m 30 -v
 
 按照惯例给出 curl 命令：
 
-{% highlight ruby %}
+```ruby
 $ curl -X POST "http://echo.httpkit.com" -m 30 -v
-{% endhighlight %}
+```
 
 上面的图片显示了对 ```http:echo.httpkit.com``` 发起的 ```POST```请 求和服务器返回的响应。浏览器里的典型 ```POST``` 使用案例就是你提交一个表单的时候。```POST``` 请求允许我们向服务器发送更大或者敏感的数据，比如图片或者视频。举个例子，比如我们要把我们的用户名和密码发送到服务器上去做验证。我们完全可以使用 ```GET``` 通过附加查询字符串把数据发给服务器。这样做的毛病很明显： 我们的验证信息在 URL 上是可见的。这必然不是我们想要的。在表单提交上使用 ```POST``` 请求能够解决这个问题。而且 ```POST``` 请求也能避免你使用 ```GET``` 请求时的查询字符串长度限制问题。通过 ```POST``` 请求，我们可以给服务器发送更大的数据。
 
@@ -114,9 +114,9 @@ $ curl -X POST "http://echo.httpkit.com" -m 30 -v
 
 或者用 curl：
 
-{% highlight ruby %}
+```ruby
 $ curl -X POST "http://al-blackjack.herokuapp.com/new_player" -d "player_name=Albert" -m 30 -v
-{% endhighlight %}
+```
 
 注意在图片和 curl 命令里我们都提供了额外的参数： ```player_name=albert``` 。 这个跟我们在第一个表单的 “What's your name?” 输入框里填写内容并提交是一样的。
 

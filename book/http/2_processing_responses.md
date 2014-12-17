@@ -75,9 +75,11 @@ Location: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsettings
 总之，我们已经看到，HTTP 只不过是一个协议，用于指示客户端与服务器之间如何使用某种格式的文本进行通信。
 
 HTTP 响应中最重要的部分如下:
+
 * 状态码
 * 头部
 * 消息正文，里面有原始响应数据
 
 试试看，在下面这个图里你能不能找到上面那几个部分都在哪儿:
+
 ![raw_data](../../images/request_http_tool.png)

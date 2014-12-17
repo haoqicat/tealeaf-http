@@ -27,9 +27,9 @@ title: 什么是 URL
 ### 查询字符串 / 参数
 一个查询字符串或者参数是 URL 的一部分并且通常都包含一些要发往至服务器的各种类型的数据。一个简单的带查询字符串的 URL 长这样：
 
-{% highlight ruby %}
+```ruby
 http://www.example.com?search=ruby&results=10
-{% endhighlight %}
+```
 
 让我们拆开来看看：
 
@@ -42,9 +42,9 @@ http://www.example.com?search=ruby&results=10
 
 现在我们再来看一个例子。假设我们有下面这个 URL:
 
-{% highlight ruby %}
+```ruby
 http://www.phoneshop.com?product=iphone&size=32gb&color=white
-{% endhighlight %}
+```
 
 ![sample_url](../../images/query_string_components.png)
 
