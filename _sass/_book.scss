@@ -314,15 +314,20 @@ p.part {
   min-height: 70px;
   background: #008080;
   text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 70px;
+  color: #FFF;
   a {
     color: #FFF;
-    display: block;
-    line-height: 70px;
-    font-size: 18px;
     &:hover {
       color: #77F0F0;
     }
   }
+}
+.divider.contribute {
+  margin-top: -20px;
 }
 
 table {
