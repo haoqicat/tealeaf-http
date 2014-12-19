@@ -206,7 +206,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 800px;
-  margin: 30px auto;
+  margin: 30px auto 70px;
   background: #FFF;
 }
 p.part {
@@ -308,16 +308,35 @@ p.part {
     width: 50%;
   }
 }
+.contributors {
+  .row {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .center {
+    font-size: 18px;
+    width: 500px;
+    margin: 50px auto 100px;
+  }
+}
+.name-card.contributor {
+  width: 330px;
+  float: left;
+  min-height: 100px;
+  .text {
+    font-size: 13px;
+  }
+}
 
 .divider {
   margin-top: 50px;
-  min-height: 70px;
+  min-height: 140px;
   background: #008080;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 140px;
   color: #FFF;
   a {
     color: #FFF;
@@ -326,8 +345,8 @@ p.part {
     }
   }
 }
-.divider.contribute {
-  margin-top: -20px;
+.divider.name-list {
+  margin-top: -40px;
 }
 
 table {
