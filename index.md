@@ -17,6 +17,7 @@ title: http
       </p>
       <a href="http://www.gotealeaf.com/books/http" class="read-btn">英文版</a>
       <a href="http://happypeter.github.io/tealeaf-http#chinese" class="read-btn">中文版</a>
+      <a href="https://selfstore.io/products/266" class="read-btn">购买电子书</a>
     </div>
     <img alt="Http" class="book-image" src="images/http.png"/>
   </div>
