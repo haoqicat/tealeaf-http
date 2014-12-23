@@ -17,6 +17,6 @@ title: 致谢
 
 ### 奉献爱心
 
-亲爱的读者，在您阅读本书的时候，若发现任何错别字、错误或者对本书的内容安排有任何建议的话，都请告诉我们。
+亲爱的读者，若您在阅读本书的时候，发现任何错别字、错误或者对本书的内容安排有任何建议的话，都请告诉我们。
 
-联系邮箱 <a href="mailto:books@gotealeaf.com">books@gotealeaf.com</a>
+我们的邮箱 <a href="mailto:books@gotealeaf.com">books@gotealeaf.com</a>。
