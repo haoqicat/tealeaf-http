@@ -9,7 +9,7 @@ title: http
         HTTP 下午茶
       </div>
       <div class='book-author'>
-        <a href="http://www.gotealeaf.com/">茶叶学院</a> 原著，
+        <a href="http://www.gotealeaf.com/">Tealeaf Academy</a> 著，
         <a href="https://github.com/happypeter">happypeter</a> 发起翻译
       </div>
       <p class='book-description'>
@@ -32,13 +32,30 @@ title: http
       <div class="name">
        Kevin Wang
       </div>
-      <div class="job-title"><a href="http://www.gotealeaf.com/">茶叶学院联合创始人</a></div>
+      <div class="job-title"><a href="http://www.gotealeaf.com/">Tealeaf Academy 联合创始人</a></div>
       感谢 @happypeter 和 Ruby China 社区的中文翻译工作， 希望能对学习 web 开发的新手有所帮助。
     </div>
   </div>
 </div>
 <div class="contents-wrapper">
   <div class="table-of-contents" id="chinese">
+    <p class="part">前言</p>
+    <table class="index-table">
+      <tbody>
+        <tr class="chapter-wrap">
+         <td class="chapter-index">1</td>
+         <td class="chapter-title">
+           <a href="book/preface/credits.html">致谢</a>
+         </td>
+        </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">2</td>
+          <td class="chapter-title">
+            <a href="book/preface/copyright.html">版权声明</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <p class="part">背景知识</p>
     <table class="index-table">
       <tbody>

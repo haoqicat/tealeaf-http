@@ -58,8 +58,23 @@ a {
 }
 .top-bg {
   min-height: 70px;
+  #logo {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  #logo a {
+    width: 237px;
+    height: 55px;
+    background-size: 237px 55px;
+    background: url("//d2qb6gwdv71obb.cloudfront.net/assets/logo-8c1ebe1940fd8af979a537f9d15a808f.svg");
+    display: block;
+  }
   .home {
-    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    margin-left: 420px;
+    line-height: 55px;
   }
   a {
     color: #FFF;
@@ -81,11 +96,11 @@ a {
   width: 535px;
   margin-top: 75px;
   font-family: "Crete Round", Georgia, "Times New Roman", Times, serif;
-}
-.top-large .book-title {
-  font-size: 30px;
-  color: #E5533C;
-  margin-top: 35px;
+  .book-title {
+    font-size: 30px;
+    color: #E5533C;
+    margin-top: 35px;
+  }
 }
 .top-large .book-author {
   color: #14877E;
