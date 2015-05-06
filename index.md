@@ -16,7 +16,7 @@ title: http
         每当打开浏览器就会用到 http 协议，网站开发者怎能不会 http？ 本书将为你阐明这套协议的骨干精髓，程序员必备枕边小书。
       </p>
       <a href="http://www.gotealeaf.com/books/http" class="read-btn">英文版</a>
-      <a href="http://happypeter.github.io/tealeaf-http#chinese" class="read-btn">中文版</a>
+      <a href="#chinese" class="read-btn">中文版</a>
       <a href="https://selfstore.io/products/266" class="read-btn">购买电子书</a>
     </div>
     <img alt="Http" class="book-image" src="images/http.png"/>
